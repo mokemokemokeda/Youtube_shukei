@@ -113,3 +113,5 @@ except ValueError:
 
 # DataFrameに列追加（全行共通の登録者数）
 df['登録者数'] = subscriber_count
+
+print(df)
