@@ -1,6 +1,7 @@
 import requests
 import pandas as pd
 import time
+import os
 
 channel_id = 'UCXRqdYwNwa0ZGxScFaUnStg'
 API_KEY = os.getenv("YOUTUBE_API_KEY")
