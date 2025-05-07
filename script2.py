@@ -38,14 +38,4 @@ with open("scrape.js", "w") as file:
 # 実行して登録者数を取得
 result = subprocess.run(['node', 'scrape.js'], capture_output=True, text=True)
 subscriber_count_str = result.stdout.strip()
-
-# 数値に変換
-try:
-    subscriber_count = int(subscriber_count_str.replace(',', ''))
-except ValueError:
-    subscriber_count = None
-
-# DataFrameに列追加（全行共通の登録者数）
-df['登録者数'] = subscriber_count
-
-print(df)
+print(f'{subscriberCount}')
