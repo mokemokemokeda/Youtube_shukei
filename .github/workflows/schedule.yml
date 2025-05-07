@@ -24,9 +24,8 @@ jobs:
           pip install -r requirements.txt
           pip install openpyxl
 
-      - name: Run script
+      - name: Run script1
         env:
           GOOGLE_SERVICE_ACCOUNT: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-        #run: python script.py
-        run: python script2.py
+        run: python script1.py
