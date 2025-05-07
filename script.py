@@ -66,5 +66,5 @@ df['投稿日'] = pd.to_datetime(df['投稿日'])
 df = df.sort_values(by='投稿日')
 
 # 結果
-print(f'取得動画数: {len(df)} 件')
-print(df)
+# print(f'取得動画数: {len(df)} 件')
+# print(df)
